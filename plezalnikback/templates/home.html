@@ -1,0 +1,44 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Plezalnik</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel=" stylesheet " href="{% static 'css/style.css'%} ">
+</head>
+
+<body>
+    <div class="container center">
+        <div class="display-table-cell ">
+            <div class="row ">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <a href="../style?user=6"><img class="icons highlight" src="{% static 'img/add.png' %} ">
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-xs-8 col-xs-offset-2 ">
+                    <a href="../leaderboard"><img class="icons highlight" src="{% static 'img/graph.png' %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js "></script>
+    <script src="js/script.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Plezalnik</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel=" stylesheet " href="{% static 'css/style.css'%} ">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/4gray.png' %}">
+            </div>
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/5gray.png' %}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/6gray.png' %}">
+            </div>
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/7gray.png' %}">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/8gray.png' %}">
+            </div>
+            <div class="col-xs-6 square">
+                <img class="circle" src="{% static 'img/9gray.png' %}">
+            </div>
+        </div>
+        <div class="row black">
+            <a href="../gradefinish?user={{ user }}&achievement_type={{ style }}&grade_no={{ grade_no }}&grade_letter=a">
+                <div class="col-xs-4 rectangle highlight">a</div>
+            </a>
+            <a href="../gradefinish?user={{ user }}&achievement_type={{ style }}&grade_no={{ grade_no }}&grade_letter=b">
+                <div class="col-xs-4 rectangle highlight">b</div>
+            </a>
+            <a href="../gradefinish?user={{ user }}&achievement_type={{ style }}&grade_no={{ grade_no }}&grade_letter=c">
+                <div class="col-xs-4 rectangle highlight">c</div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 ">
+                <a href="../plezalnik"><img class="repeat" src="{% static 'img/repeat.png' %}">
+                </a>
+            </div>
+            <div class="col-xs-6 ">
+                <img class="repeat" src="{% static 'img/lockgray.png' %}">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js "></script>
+    <script src="js/script.js "></script>
+</body>
+
+</html>
